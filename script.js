@@ -21,3 +21,21 @@ var signUpPage = document.querySelector(".signup")
 signUp.addEventListener("click", function () {
     signUpPage.style.display = 'flex'
 })
+
+
+
+// var navbar = document.querySelector("#navbar")
+// var right = document.querySelector(".right p")
+var menu = document.querySelector(".navbar #menu")
+var loader = document.querySelector(".loader")
+function toggleLoader() {
+    if (loader.style.top === "0%") {
+        loader.style.top = "-100%";
+        console.log("Loader hidden");
+    } else {
+        loader.style.top = "0%";
+        console.log("Loader shown");
+    }
+}
+
+menu.addEventListener("click", toggleLoader);
